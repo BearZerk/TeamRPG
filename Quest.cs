@@ -19,10 +19,10 @@ public class Quest : ScriptableObject
     string _id;
     string _name;
     string _description;
-    Dictionary<string, Task> _tasks;
+    List<Task> _tasks;
 
     //Constructor for when we create a new Quest
-    public Quest(string newID, string newName, string newDescription, Dictionary<string, Task> newTask)
+    public Quest(string newID, string newName, string newDescription, List<Task> newTask)
     {
         _id = newID;
         _name = newName;
